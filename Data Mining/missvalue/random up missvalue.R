@@ -1,0 +1,8 @@
+install.packages("mice")
+library(mice)
+install.packages("missForest")
+library(missForest)
+data <- prodNA(iris, noNA = 0.05)
+complete.cases(data)
+summary(data)
+md.pattern(data)
